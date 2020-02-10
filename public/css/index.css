@@ -1,0 +1,15 @@
+
+.surveyItem{
+    clear: both;
+    float: left;
+}
+
+.surveyItemCheckbox {
+    clear: both;
+    float: right;
+}
+
+#checkboxArea{
+    clear: both;
+    float: left;
+}
