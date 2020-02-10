@@ -4,53 +4,59 @@
         <link rel="stylesheet" href="./public/css/index.css" />
     </head>
     <body>
-        <h1 id="title">
-            freeCodeCamp Survey Form
-        </h1>
-        <p id="description">
-            Help us by telling us a little about yourself
-        </p>
-        <form id="survey-form">
-
-            <label id="name-label" class="surveyItem">Name</label>
-            <input type="text" id="name" class="surveyItem" placeholder="Enter valid Name"/>
-
-            <label id="email-label" class="surveyItem">Email</label>
-            <!-- Ensure error is handled when non email is inputed-->
-            <input type="email" id="email" class="surveyItem" placeholder="Enter a valid Email"/>
-
-            <label id="number-label" class="surveyItem">Age</label>
-            <input type="number" id="number" class="surveyItem" placeholder="Enter your age"/>
-
-            <!--Set in dropdown list-->
-            <label id="descriptionOption" class="surveyItem">Which option describes you?</label>
-            <select id="dropdown" class="surveyItem">
-                <option value="studentHighSchool">High School Student</option>
-                <option value="studentCollege">College Student</option>
-                <option value="developer">Developer</option>
-                <option value="other">Other</option>
-
-            </select>
-
-            <!-- Set up checkbox list-->
-            <div id="checkboxArea">
-                <input id="optionDefinitely" type="checkbox" name="recommendation" value="Definitely"  />
-                <label for="optionDefinitely"  >Definitely</label>
-                <input id="optionMaybe" type="checkbox" name="recommendation" value="Maybe"  />
-                <label for="optionMaybe"  >Maybe</label>
-                <input id="optionNotSure" type="checkbox" name="recommendation" value="Not sure"/>
-                <label for="optionNotSure" >Not Sure</label>
+        <div id="bodyContainer">
+            <div id="intro">
+                <h1 id="title">
+                    freeCodeCamp Survey Form
+                </h1>
+                <p id="description">
+                    Help us by telling us a little about yourself
+                </p>
             </div>
+            <div id="surveyArea">
+                <form id="survey-form">
 
-            <!-- set up textarea for comments-->
-            <label id="commentLabel" class="surveyItem">Any comments or suggestions</label>
-            <textarea id="commentArea" class="surveyItem" placeholder="Enter your comments here">
-                
-            </textarea>
+                    <label id="name-label" class="surveyLabel" >Name</label>
+                    <input type="text" id="name" class="surveyInput" placeholder="Enter valid Name"/>
 
-            <button id="submit" text="submit" type="submit" class="surveyItem">Submit</button>
+                    <label id="email-label" class="surveyLabel" >Email</label>
+                    <!-- Ensure error is handled when non email is inputed-->
+                    <input type="email" id="email" placeholder="Enter a valid Email" class="surveyInput"/>
 
-        </form>
+                    <label id="number-label" class="surveyLabel" >Age</label>
+                    <input type="number" id="number" placeholder="Enter your age" class="surveyInput"/>
 
+                    <!--Set in dropdown list-->
+                    <label id="descriptionOption" class="surveyLabel" >Which option describes you?</label>
+                    <select id="dropdown"  class="surveyInput">
+                        <option value="studentHighSchool">High School Student</option>
+                        <option value="studentCollege">College Student</option>
+                        <option value="developer">Developer</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <!-- Set up checkbox list-->
+                    <label id="checkboxAreaLabel" class="surveyLabel" >How likely are you to recommend FreeCodeCamp</label>
+                    <div id="checkboxArea" class="surveyInput">
+                        <input id="optionDefinitely" type="checkbox" name="recommendation" value="Definitely"  />
+                        <label for="optionDefinitely"  >Definitely</label>
+                        <input id="optionMaybe" type="checkbox" name="recommendation" value="Maybe"  />
+                        <label for="optionMaybe"  >Maybe</label>
+                        <input id="optionNotSure" type="checkbox" name="recommendation" value="Not sure"/>
+                        <label for="optionNotSure" >Not Sure</label>
+                    </div>
+
+                    <!-- set up textarea for comments-->
+                    <label id="commentLabel" class="surveyLabel" >Any comments or suggestions</label>
+                    <textarea id="commentArea"  placeholder="Enter your comments here" class="surveyInput">
+                        
+                    </textarea>
+
+                    <button id="submit" text="submit" type="submit" >Submit</button>
+
+                </form>
+            </div>
+        </div>
     </body>
 </html>
